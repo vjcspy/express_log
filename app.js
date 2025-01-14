@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // Định nghĩa route POST
 app.post('/log', (req, res) => {
-  console.log('Received body:', JSON.stringify({ necessaryPart: req.body.necessaryPart }, undefined, 4)); // In nội dung cần thiết lên console
+  console.log('Received body:', JSON.stringify(req.body,undefined,4)); // In nội dung body lên console
   res.status(200).send('Request body successfully received');
 });
 
