@@ -8,3 +8,5 @@ fetch('http://localhost:3005/log', {
   .then(console.log)
   .catch(console.error);
 ```
+
+http://54.251.229.80:8080/login?token=d3cd56e3898667f4431fbb740a4e63ef
