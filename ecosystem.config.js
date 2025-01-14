@@ -2,7 +2,7 @@ module.exports = {
     apps: [
         {
             name: "express-log-server", // Tên process
-            script: "main.js", // File chính để chạy server
+            script: "app.js", // File chính để chạy server
             instances: 1, // Số lượng instance (1 = single instance)
             exec_mode: "fork", // Chế độ chạy (fork hoặc cluster)
             watch: true, // Tự động restart khi file thay đổi
