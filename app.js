@@ -1,0 +1,19 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = 3005;
+
+// Middleware để phân tích JSON từ body của request
+app.use(bodyParser.json());
+
+// Định nghĩa route POST
+app.post('/log', (req, res) => {
+  console.log('Received body:', JSON.stringify(req.body,undefined,4)); // In nội dung body lên console
+  res.status(200).send('Body received!');
+});
+
+// Start server
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
